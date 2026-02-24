@@ -5,7 +5,6 @@ import { fileURLToPath } from 'url'
 
 const rootDir = path.dirname(fileURLToPath(import.meta.url))
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue()],
   resolve: {
@@ -14,8 +13,10 @@ export default defineConfig({
     },
   },
   server: {
-    host: true,
+    host: '0.0.0.0', // Explicitly bind to all network interfaces
     port: 3000,
-    open: true
+    open: true,
+    strictPort: true, // Fail if port is already in use
+    cors: true // Enable CORS for network access
   }
 })
