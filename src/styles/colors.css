@@ -1,0 +1,74 @@
+/* Harmony Color System - Split Complementary based on Primary Blue */
+:root {
+  /* Primary: Deep Royal Blue (Base: 220°) */
+  --primary-50: #eff6ff;
+  --primary-100: #dbeafe;
+  --primary-200: #bfdbfe;
+  --primary-300: #93c5fd;
+  --primary-400: #60a5fa;
+  --primary-500: #3b82f6;  /* Main Primary */
+  --primary-600: #2563eb;
+  --primary-700: #1d4ed8;  /* Deep Royal */
+  --primary-800: #1e40af;
+  --primary-900: #1e3a8a;
+  
+  /* Secondary: Warm Amber (30° from primary - harmonious) */
+  --secondary-50: #fffbeb;
+  --secondary-100: #fef3c7;
+  --secondary-200: #fde68a;
+  --secondary-300: #fcd34d;
+  --secondary-400: #fbbf24;
+  --secondary-500: #f59e0b;  /* Main Secondary */
+  --secondary-600: #d97706;
+  --secondary-700: #b45309;
+  --secondary-800: #92400e;
+  --secondary-900: #78350f;
+  
+  /* Tertiary: Coral/Salmon (150° from primary - completion) */
+  --tertiary-50: #fff1f2;
+  --tertiary-100: #ffe4e6;
+  --tertiary-200: #fecdd3;
+  --tertiary-300: #fda4af;
+  --tertiary-400: #fb7185;
+  --tertiary-500: #f43f5e;  /* Main Tertiary */
+  --tertiary-600: #e11d48;
+  --tertiary-700: #be123c;
+  --tertiary-800: #9f1239;
+  --tertiary-900: #881337;
+  
+  /* Neutral: Slate (Neutral complement) */
+  --neutral-50: #f8fafc;
+  --neutral-100: #f1f5f9;
+  --neutral-200: #e2e8f0;
+  --neutral-300: #cbd5e1;
+  --neutral-400: #94a3b8;
+  --neutral-500: #64748b;
+  --neutral-600: #475569;
+  --neutral-700: #334155;
+  --neutral-800: #1e293b;
+  --neutral-900: #0f172a;
+  
+  /* Semantic Colors */
+  --success: #10b981;  /* Emerald - balanced */
+  --warning: var(--secondary-500);
+  --danger: var(--tertiary-600);
+  --info: #06b6d4;     /* Cyan - analogous to primary */
+  
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, var(--primary-600) 0%, var(--primary-800) 100%);
+  --gradient-warm: linear-gradient(135deg, var(--secondary-400) 0%, var(--tertiary-400) 100%);
+  --gradient-cool: linear-gradient(135deg, var(--primary-500) 0%, var(--info) 100%);
+  --gradient-sunset: linear-gradient(135deg, var(--secondary-500) 0%, var(--tertiary-500) 100%);
+  
+  /* Shadows with color */
+  --shadow-primary: 0 4px 14px 0 rgba(59, 130, 246, 0.39);
+  --shadow-warm: 0 4px 14px 0 rgba(245, 158, 11, 0.39);
+  --shadow-tertiary: 0 4px 14px 0 rgba(244, 63, 94, 0.39);
+  --shadow-neutral: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  
+  /* Text */
+  --text-primary: var(--neutral-800);
+  --text-secondary: var(--neutral-600);
+  --text-muted: var(--neutral-400);
+  --text-inverse: #ffffff;
+}
